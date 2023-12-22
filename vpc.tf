@@ -1,7 +1,7 @@
 module "network" {
   source  = "app.terraform.io/hashicorp-chip/network/google"
-  version = "3.4.0"
-  network_name = gaurav-network
+  version = "8.1.0"
+  network_name = jhsim-network
   project_id = var.project
   subnets = [
   {
@@ -10,5 +10,4 @@ module "network" {
     subnet_region = var.region
   }
 ]
-  # insert required variables here
 }
